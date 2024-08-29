@@ -1,0 +1,84 @@
+/* Importar fuente */
+/* Vincular la fuente Roboto de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Reset de estilos básicos */
+/* Aplicar margen y padding cero a todos los elementos, y utilizar border-box para box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para el cuerpo del documento */
+/* Configurar la fuente, el color de texto y de fondo, y el padding del cuerpo del documento */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 0px 20px;
+}
+
+/* Estilos para el encabezado */
+/* Configurar el fondo, el color del texto, el padding, la alineación y el margen del encabezado */
+#main-header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+/* Estilos para el título principal */
+/* Configurar el tamaño y el margen del título principal */
+.main-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* Estilos para la navegación */
+/* Configurar el margen inferior de la navegación */
+#main-nav {
+    margin-bottom: 20px;
+}
+
+/* Estilos para la lista de navegación */
+/* Configurar la lista de navegación como flexbox y centrar los ítems */
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos para los ítems de navegación */
+/* Configurar el margen de los ítems de navegación */
+.nav-item {
+    margin: 0 10px;
+}
+
+/* Estilos para los enlaces de navegación */
+/* Configurar el color, la decoración y el peso de los enlaces */
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Estilos generales para las secciones */
+/* Configurar el margen, el padding, el fondo, el radio de borde y la sombra de las secciones */
+.content-section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los encabezados de sección */
+/* Configurar el tamaño y el margen de los encabezados de sección */
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #2d3a6a;
+    background-color: #f4f4f4;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0px 20px;
+}
+
+#main-header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}   
+
+/* Estilos para el título principal */
+/* Configurar el tamaño y el margen del título principal */
+.main-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* Estilos para la navegación */
+/* Configurar el margen inferior de la navegación */
+#main-nav {
+    margin-bottom: 20px;
+}
+
+/* Estilos para la lista de navegación */
+/* Configurar la lista de navegación como flexbox y centrar los ítems */
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos para los ítems de navegación */
+/* Configurar el margen de los ítems de navegación */
+.nav-item {
+    margin: 0 10px;
+}
+
+/* Estilos para los enlaces de navegación */
+/* Configurar el color, la decoración y el peso de los enlaces */
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Estilos generales para las secciones */
+/* Configurar el margen, el padding, el fondo, el radio de borde y la sombra de las secciones */
+.content-section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los encabezados de sección */
+/* Configurar el tamaño y el margen de los encabezados de sección */
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
