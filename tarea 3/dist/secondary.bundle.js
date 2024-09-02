@@ -1,0 +1,1 @@
+(()=>{function e(){return React.createElement("div",{className:"container mx-auto p-4"},React.createElement("h2",{className:"text-3xl font-bold mb-6"},"Aplicación Secundaria en React"),React.createElement("p",null,"Este es otro punto de montaje independiente."))}ReactDOM.render(React.createElement(e,null),document.getElementById("root2"))})();

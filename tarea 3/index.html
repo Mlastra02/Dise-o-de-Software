@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web - React</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Colores personalizados */
+        .bg-gradient-custom {
+            background: linear-gradient(to bottom right, rgb(254, 96, 110), rgb(255, 190, 114));
+        }
+        .bg-soft-custom {
+            background-color: rgb(252, 232, 201); 
+        }
+        .bg-card-custom {
+            background-color: rgb(248, 223, 192); 
+        }
+        .text-soft-dark {
+            color: rgb(85, 85, 85);
+        }
+        .text-soft-light {
+            color: rgb(245, 245, 245);
+        }
+        .input-border-custom {
+            border: 2px solid rgb(254, 96, 110);
+            background-color: rgb(255, 243, 233); 
+        }
+    </style>
+</head>
+<body class="text-soft-dark bg-soft-custom">
+
+    <header class="bg-gradient-custom text-soft-light text-center py-6 rounded-b-md shadow-md mb-0">
+        <h1 class="text-4xl font-bold">Bienvenidos a Mi Sitio Web</h1>
+    </header>    
+    
+    <nav class="bg-gradient-custom text-soft-light text-center py-2 rounded-b-full shadow-lg mt-0 mb-0">
+        <ul class="nav-list flex justify-center space-x-4 list-none p-0 m-0">
+            <li><a href="#seccion1" class="text-soft-light font-bold hover:text-teal-200">Inicio</a></li>
+            <li><a href="#seccion2" class="text-soft-light font-bold hover:text-teal-200">Galería</a></li>
+            <li><a href="#seccion3" class="text-soft-light font-bold hover:text-teal-200">Servicios</a></li>
+            <li><a href="#seccion4" class="text-soft-light font-bold hover:text-teal-200">Testimonios</a></li>
+            <li><a href="#root2" class="text-soft-light font-bold hover:text-teal-200">Contactanos</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <!-- Aquí puedes añadir el contenido que tenías anteriormente -->
+        <section id="seccion1" class="text-center py-12 mx-4 mt-4 text-soft-dark">
+            <h2 class="text-4xl font-extrabold mb-6 text-teal-700 font-sans">
+                Sobre Nosotros
+            </h2>
+            <p class="text-xl leading-relaxed mx-auto max-w-prose font-medium italic">
+                ¡Somos un equipo apasionado por la tecnología! Cada uno de nosotros aporta su toque mágico, combinando habilidades para crear soluciones innovadoras que sorprenden y encantan a nuestros clientes. ¡Nos encanta lo que hacemos y se nota en cada proyecto!
+            </p>
+        </section>
+
+        <section id="seccion2" class="text-center py-12 mx-4 mt-8 text-soft-dark">
+            <h2 class="text-4xl font-extrabold mb-6 text-teal-700 font-sans">
+                Galería
+            </h2>
+            <div class="flex justify-center space-x-40">
+                <img src="https://via.placeholder.com/300x200" alt="Imagen 1" class="rounded-lg shadow-lg">
+                <img src="https://via.placeholder.com/300x200" alt="Imagen 2" class="rounded-lg shadow-lg">
+                <img src="https://via.placeholder.com/300x200" alt="Imagen 3" class="rounded-lg shadow-lg">
+            </div>
+        </section>
+    
+        <section id="seccion3" class="text-center py-12 mx-4 mt-8 text-soft-dark">
+            <h2 class="text-4xl font-extrabold mb-6 text-teal-700 font-sans">
+                Nuestros Servicios
+            </h2>
+            <div class="space-y-8">
+                <div class="p-6 rounded-lg shadow-lg bg-card-custom">
+                    <h3 class="text-2xl font-bold mb-4 text-teal-700">
+                        Desarrollo Web
+                    </h3>
+                    <p class="text-lg leading-relaxed">
+                        Ofrecemos soluciones de desarrollo web a medida para <a class="underline decoration-teal-500">satisfacer las necesidades específicas</a> de cada cliente.
+                    </p>
+                </div>
+                <div class="p-6 rounded-lg shadow-lg bg-card-custom">
+                    <h3 class="text-2xl font-bold mb-4 text-teal-700">
+                        Consultoría en TI
+                    </h3>
+                    <p class="text-lg leading-relaxed">
+                        Brindamos consultoría estratégica en tecnología de la información para <a class="underline decoration-teal-500">ayudar a las empresas a alcanzar sus objetivos.</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center py-12 mx-4 mt-8 text-soft-dark">
+            <div id="root"></div>
+        
+            <div id="root2"></div>
+        </section>
+
+        <!-- Puntos de montaje para React -->
+        <div id="root"></div>
+    </main>
+    
+    <footer class="bg-gradient-custom text-center py-4">
+        <p class="text-teal-100">&copy; 2024 Ejemplo de Sitio Web. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Enlaces a React, ReactDOM y Babel desde un CDN -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Tu archivo de aplicación React para el primer root -->
+    <script src="/main.bundle.js"></script>
+
+    <!-- Tu archivo de aplicación React para el segundo root -->
+    <script src="/secondary.bundle.js"></script>
+</body>
+</html>
